@@ -51,12 +51,13 @@
 (comment
 
   ;; in cider, put your cursor over the end form and hit c-x c-e
+  ;; c-c c-v c-f e sends results to an external window, easy to copy 
 
   (require '[clojure.pprint :as pprint])
   
   (pprint
    
-   {:test-name :passed?
+   {:test-name :?
     :test-total-1ooo-dollars (= 22764.3037016127   (total 1000 0.05 0.05 30))
     :test-total-100-dollars  (= 1625911.4580202834 (total 100  0.10 0.15 22))
     :test-total-1-dollar     (= 0 (total 1 0.10 0.04 10))
